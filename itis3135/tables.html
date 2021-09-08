@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+ 
+<head>
+	<meta charset="UTF-8">
+	<link href="styles/Activity2.css" rel="stylesheet" type="text/css" >
+	<title>Michael Piercy, ITSC3135-051, Table</title>
+</head>
+<!-- background should be red-->
+<body  >
+	<header >
+			<h1>Michael Piercy >> ITIS3135</h1>
+	</header>
+
+    <nav>
+		<a href="https://webpages.uncc.edu/mpiercy6/itis3135/introduction.html">Introduction</a> 
+        ||
+		<a href="contract.html">Contract</a>
+	</nav>	
+	
+	
+	<main style = "color: olive;" >
+		<h2>Activity #2 - HTML Tables</h2>
+		
+		<h3>My Data Table</h3>
+        
+
+        
+
+        <ol>
+            <li>Michael Jordan michael@gmail.com 4</li>
+            
+            
+       
+            <li>Hope Sanchez SanchezH@windstream.net 3</li>
+            
+        
+            <li>
+                David Law Davlaw@windstream.net 12
+            </li>
+        
+            <li>
+                Bannana Republic BRepublic@yahoo.com 14
+            </li>
+        
+            <li>
+                Rick Morty MortR@gmail.com 13
+            </li>
+        
+            <li>
+                Dan Sue SueD@twc.com 18
+            </li>
+       
+            <li>
+                Scooby Doo DooS@gmail.com 29
+            </li>
+        </ol>
+
+        <h3>Employee Data Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    
+                    <th>Name</th>
+                    
+                    <th>E-mail</th>
+                    <th class="right">Years of Service</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                <td>Michael Jordon</td>
+                
+                <td>michael@gmail.com</td>
+                <td>4</td>
+</tr>
+<tr>
+    <td>Hope Sanchez</td>
+    <td>SanchezH@windstream.net</td>
+    <td>3</td>
+</tr>
+<tr>
+    <td>David Law</td>
+    <td>Davlaw@windstream.net</td>
+    <td>12</td>
+</tr>
+<tr>
+    <td>Bannana Republic</td>
+    <td>
+        BRepublic@yahoo.com
+    </td>
+    <td>14</td>
+
+</tr>
+<tr>
+    <td>Rick Morty</td>
+    <td>MortR@gmail.com</td>
+    <td>13</td>
+</tr>
+<tr>
+    <td>Dan Sue</td>
+    <td>SueD@twc.com</td>
+    <td>18</td>
+    
+</tr>
+<tr>
+    <td>Scooby Doo</td>
+    <td>DooS@gmail.com</td>
+    <td>29</td>
+</tr>
+            </tbody>
+
+        </table>
+
+
+
+
+        <!--duplicate-->
+        <h3>Employee Complex Table</h3>
+        <figure>
+        <table>
+            <thead>
+                <tr>
+                    <th id="sector">Sector</th>
+                    <th id="name">Name</th>
+                    
+                    <th id="email">E-mail</th>
+                    <th class="right" id="service">Years of Service</th>
+                    <th id="salary">Monthly Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <th rowspan="4" >Sales</th>
+                <tr>
+                    
+                <td headers="name">Michael Jordon</td>
+                
+                <td headers="email">michael@gmail.com</td>
+                <td headers = "service">4</td>
+                <td headers="salary">$3k</td>
+
+</tr>
+<tr>
+    
+    <td headers="name">Hope Sanchez</td>
+    
+    <td headers="email">SanchezH@windstream.net</td>
+    <td headers="service">3</td>
+    <td headers = "salary">$2.9k</td>
+</tr>
+<tr>
+    
+    <td headers = "name">David Law</td>
+    
+    <td headers="email">Davlaw@windstream.net</td>
+    <td headers="service">12</td>
+    <td headers = "salary">$5k</td>
+
+</tr>
+<th rowspan="3" >Management</th>
+<tr>
+    
+    <td headers="name">Bannana Republic</td>
+   
+    <td headers="email">
+        BRepublic@yahoo.com
+    </td>
+    <td headers="service" >14</td>
+    <td headers = "salary">$5.2k</td>
+
+</tr>
+<tr>
+    
+    <td headers="name">Rick Morty</td>
+    <td headers="email">MortR@gmail.com</td>
+    <td headers="service">13</td>
+    <td headers = "salary">$5.1k</td>
+</tr>
+<th rowspan="3" >Research and Design</th>
+<tr>
+    
+    <td headers="name">Dan Sue</td>
+    <td headers="email">SueD@twc.com</td>
+    <td headers="service">18</td>
+    <td headers = "salary">$6k</td>
+    
+</tr>
+<tr>
+    <td headers="name">Scooby Doo</td>
+    <td headers="email">DooS@gmail.com</td>
+    <td headers="service" >29</td>
+    <td headers = "salary">$6k</td>
+</tr>
+<tr>
+<th colspan="3">Total Years</th>
+<th colspan="1">93</th>
+</tr>
+            </tbody>
+
+        </table>
+    </figure>
+       
+    
+
+	</main>
+	
+	<footer>
+<!-- links to different websites of mine-->
+<!--&#9533 should add braces to divide between them.-->
+        <nav>
+            <a href="https://webpages.uncc.edu/mpiercy6/itis3135/Index.html" target="_blank">Charlotte.edu</a> &#9553;
+            <a href="https://github.com/1MichaelPiercy" target="_blank">Github</a> &#9553;
+            <a href="https://1michaelpiercy.github.io/itis3135/introduction.html" target="_blank">Github.io</a> &#9553;
+            <a href="https://1MichaelPiercy.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9553;
+            <a href="https://www.freecodecamp.org/1MichaelPiercy" target="_blank">freeCodeCamp</a> 
+
+        </nav>
+		<br />
+	
+		<p>Page built by Piercy inc</p>
+	
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmpiercy6%2Fitis3135%2Fintroduction.html">
+			<img src="images/button-valid-html5.gif" width="100" height="35" alt="Link to HTML validator"></a>
+
+		<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmpiercy6%2Fitis3135%2Fintroduction.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+			<img src="images/button-valid-css.gif" width="100" height="35" alt="Link to CSS validator"></a>
+	
+	</footer>
+
+</body>
+
+</html>
