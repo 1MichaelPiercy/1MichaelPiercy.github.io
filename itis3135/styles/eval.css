@@ -1,0 +1,74 @@
+/* had to make copy of default class for the evaluation in order to keep it from
+interferring with the introduction page*/
+
+body 
+{
+    font-family: 'Franklin Gothic Medium';
+    
+    background-color: orange;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+footer
+{
+color: yellow;
+font-weight: bold;
+text-align: center;
+
+
+padding-top: 25px;
+padding-bottom: 25px;
+
+}
+
+header
+{
+color: yellow;
+font-weight: bold;
+text-align: center;
+}
+
+.ol{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 325px;
+	margin-right: 325px;
+}
+
+figure, section
+{
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+
+
+nav
+{
+	text-align: center;
+}
+
+h2, h3
+{
+	text-align: center;
+}
+.div{
+	margin-left: 325px;
+	margin-right: 325px;
+}
+
+p{
+	margin-left: 275px;
+	margin-right: 275px;
+}
+a{
+	color: black;
+}
+

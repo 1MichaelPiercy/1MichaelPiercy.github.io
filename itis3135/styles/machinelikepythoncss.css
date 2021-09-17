@@ -1,0 +1,43 @@
+/*
+ https://coolors.co/31393c-2176ff-33a1fd-fdca40-f79824   */
+
+
+body{
+    background-color: #FDCA40;
+    text-align: center;
+    color: #31393C;
+}
+table{
+    border-collapse: collapse;
+}
+figure{
+	padding-left: 700px;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+}
+th, td{
+    border: solid black;
+}
+footer,header {
+    text-align: center;
+    color: #31393C;
+}
+
+.p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+p{
+	margin-left: 290px;
+	margin-right: 290px;
+}
+header{
+    grid-template-columns: 50px;
+}
+
+
