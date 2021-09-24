@@ -1,0 +1,41 @@
+/*
+ https://coolors.co/31393c-2176ff-33a1fd-fdca40-f79824   
+ 
+ https://coolors.co/c2f970-44344f-564d80-98a6d4-d3fcd5
+ */
+
+
+ body{
+    background-color: #FDCA40;
+    text-align: center;
+    color: #31393C;
+}
+
+
+#header{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 45px;
+}
+
+footer,header {
+    text-align: center;
+    color: #31393C;
+}
+
+.p{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    /*this should make sure that it is centered*/
+    justify-content: center;
+    
+    color: #44344F;
+}
+
+p{
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
