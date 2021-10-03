@@ -22,8 +22,8 @@ let companyName = "Machinelike Python";
 
     
 
-    window.alert("Today is " + day.toDateString() + ", and the time is: " + hours + "\n" + "The " + companyName + "welcomes you, " + 
-    myname + "!" + " We're glad you are doing " + feelings + "!");
+  const string = document.write("Today is " + day.toDateString() + ", and the time is: " + hours + "\n" + " \nThe " + companyName + " welcomes you, " + 
+    myname + "!" + "\nWe're glad you are doing " + feelings + "!");
 
 
  
@@ -34,7 +34,7 @@ let companyName = "Machinelike Python";
 
 function makeAds1()
 {
-const makeAds = alert("Guess we gotta get these billboards up.");
+const makeAds = window.alert("Guess we gotta get these billboards up.");
 }
 
 

@@ -29,7 +29,7 @@ footer,header {
     flex-direction: row;
     /*this should make sure that it is centered*/
     justify-content: center;
-    
+   
     color: #44344F;
 }
 
@@ -39,3 +39,24 @@ p{
 
 }
 
+/*This code below this line is solely meant for the tables for this one.*/
+.p1{
+    text-align: left;
+    padding-left: 200px;
+    padding-right: 1000px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p2{
+    text-align: left;
+    padding-left: 350px;
+    padding-right: 20px;
+}
+#button:hover{
+	background-color: burlywood;
+	color: darkblue;
+    padding: 5px 5px 5px 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
