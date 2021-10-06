@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<link href="styles/defaultcss.css" rel="Stylesheet" type="text/css" >
 	<title>Michael Piercy, ITSC3135-051, WebPage</title>
+    <script  src = "Scripts/arrays.js"></script>
 </head>
 <!-- background should be red-->
 <body  >
@@ -30,8 +31,46 @@
 	
 	
 	<main style = "color: olive;" >
-		<h2>Project Overview</h2>
-        
+
+       <div id = "results">
+		<form>
+            <p>
+                <input type="button" id = "addperson" value = "Add Salary" onclick="addSalary()">
+                
+                </p>
+                </form>
+               
+                
+                
+               
+               
+                <form>
+                <p>
+                    <input type="button" id = "displayresults" value = "Results" onclick="displayResults()">
+                    
+                    </p>
+                
+                </form>
+               
+               
+
+                
+                <form>
+                <p>
+                        <input type="button" id = "displaySalary" value = "Average Salary" onclick="displaySalary()">
+                        
+                        </p>
+        </form>
+
+        <h2 id = 'resultsTitle'>   </h2>
+        <p id = "resultsFirst">Average pay: $0</p>
+        <p id = "resultsSecond">Highest Pay: $0</p>
+
+      </div>
+      
+      
+
+      
 	
 	</main>
 	

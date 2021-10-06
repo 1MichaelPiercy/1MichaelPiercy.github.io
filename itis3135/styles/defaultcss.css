@@ -100,6 +100,11 @@ a{
 .body{
 	text-align: center;
 }
+.nav
+{
+padding-top: 5px;
+padding-bottom: 5px;
+}
 
 
 
