@@ -9,6 +9,10 @@ body
 	margin-right: 50px;
 }
 
+th, tr, td {
+    font-weight: bold;
+    text-align: left;
+}
 
 footer
 {
@@ -20,6 +24,10 @@ text-align: center;
 padding-top: 25px;
 padding-bottom: 25px;
 
+}
+p
+{
+	text-align: center;
 }
 
 header
@@ -106,5 +114,38 @@ padding-top: 5px;
 padding-bottom: 5px;
 }
 
+/*for activity 8 arrays*/
 
+.form
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
+.table
+{
+
+border: solid 5px;
+}
+
+.tablefigure
+{
+	padding-left: 700px;
+}
+
+.button{
+	background-color: rgb(61, 5, 5);
+	color: blue;
+	padding: 5px 5px 5px 5px;
+}
+
+tbody tr:nth-child(even) td
+{
+	background-color: lightgreen;
+}
+
+ tbody tr:nth-child(odd) td
+{
+	background-color: lightgoldenrodyellow;
+
+}

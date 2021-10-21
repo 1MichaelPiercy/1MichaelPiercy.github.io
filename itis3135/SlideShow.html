@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles/Piercy-Activity9.css">
+    <script src="Scripts\jquery-3.6.0.min.js"></script>
+    <script src="Scripts/Piercy-Activity9.js"></script>
+    <title>Michael Piercy, ITSC3135-051, WebPage</title>
+</head>
+
+<body>
+    <header >
+        <h1>Michael Piercy || ITIS3135</h1>
+</header>
+<main>
+    <h1>Image Gallery</h1>
+    <!--<button type="button" id = "back" onclick = "return backimage(-1)">Back</button>
+    <button type="button" id = "next" onclick = "return nextimage(1)">Next</button>-->
+    <div id = "gotit">
+    <ul id="image_list">
+        <li><img src="images/fish.jpg" alt="Catching on the South Fork" class = "active" >South Fork</img></li><br>
+
+        <li><img src="images/lures.jpg" alt="The Lures for Catching" >Lures</img></li><br>
+        <li><img src="images/casting1.jpg" alt="Casting on the Upper Kings"  >Upper Kings</img></li><br>
+        <li><img src="images/casting2.jpg" alt="Casting on the Lower Kings"  >Lower Kings</img></li><br>
+        <li><img src="images/catchrelease.jpg" alt="Catch and Release on the Big Horn" >Big Horn</img></li>
+
+    </ul>
+    </div>
+    <h2 id="caption">Catching on the South Fork</h2>
+    <p id="gallery">
+        <img src="images/fish.jpg" alt="Image Gallery area" id="image">
+    </p>
+    <div id = "previous">
+    <input type="button" class = "back" >Back</button>
+    </div>
+    <div id = "following">
+    <input type="button" class = "next" >Next</button>
+    </div>
+</main>
+</body>
+</html>

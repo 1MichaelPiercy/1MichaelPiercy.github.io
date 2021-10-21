@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="styles/Piercy_Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+  </head>
+  <body>
+  <header >
+    <h1>Michael Piercy || ITIS3135</h1>
+</header>
+
+<nav>
+  <a href="https://webpages.uncc.edu/mpiercy6/itis3135/introduction.html">Introduction</a> 
+  ||
+  <a href="contract.html">Contract</a>
+  <a href="https://webpages.uncc.edu/mpiercy6/itis3135/introduction.html">Introduction</a> &#9553;
+
+  <a href="contract.html">Contract</a> &#9553;
+  <a href="https://webpages.uncc.edu/mpiercy6/itis3135/tables.html" target="_blank">Tables</a> &#9553;
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/forms.html" target="_blank">Forms</a> &#9553;
+
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/website_evaluations.html" target="_blank">Website Evaluation</a> &#9553;
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/brand-machinelike-python.html" target="_blank">Branding</a> &#9553;
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/first-scripts.html" target="_blank">Brand Services</a> &#9553;
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/calculatorattempt.html" target="_blank">Calculator Attempt</a> &#9553;
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/calculatorguidedattempt.html" target="_blank">Calculator Guided</a> &#9553;
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/second-scripts.html" target="_blank">Brand Services: Shapes</a> &#9553;
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/arrays.html" target="_blank">Employee Register</a> &#9553;
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/Piercy_Activity_Accessibility.html?name=&phone=&submit=Submit" target="_blank">Accessibility</a>
+          <a href="https://webpages.uncc.edu/mpiercy6/itis3135/project_vans.html" target="_blank">Project Proposal</a>
+       
+        
+</nav>	
+
+<h3>Candle Delight</h3>
+
+  <header>
+  </header>
+  <main>
+
+    <table class="center">
+
+      <caption>Candle's</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th scope = "col">TYPE</th>
+          <th scope = "col">PRODUCT</th>
+          <th scope="col">FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope = "row">Birthday Candles</th>
+          <td><img src="images/Birthday-Candles.jpg" width="125" height="125" alt="Birthday Candles"></td>
+          <td><ol><li>Comes in a range of fun, vibrant colors</li><li>Small and slender forms allow you to add as many or as few of them to a dessert as you desire</li><li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li></ol></td>   
+        </tr>
+        
+        <tr>
+            <th scope = "row">Voltives</th>
+            <td><img src="images/voltives.jpeg" width="125" height="125" alt="Voltives"></td>
+            <td><ol><li>Inexpensive and easy to use</li><li>Bigger than tea lights to provide longer burn times, making them better for longer events</li></ol></td>
+          </tr>
+          <tr>
+              <th scope = "row">Taper Candles</th>
+              <td><img src="images/taper-candles.jpg" width="125" height="125" alt="Taper Candles"></td>
+              <td><ol><li>Commonly known as window candles</li><li>Long, slender constructions add dimension to table top</li></ol></td>
+            </tr>
+      </tbody>
+    </table>
+     <!--Add the form here-->
+
+     <h3>Enter your name and phone number to win a gift!</h3>
+    <form action = "#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Joe" size="25" required aria-required = "true" class = "name">
+
+      <br>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="345-123-8234"  size= "25" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required aria-required = "true" class = "phone">
+
+      <br>
+      <input type="submit" name="submit" value="Submit"  class = "input">
+
+    </form>
+   
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+      <div class="whitespace"></div>
+  </main>
+  
+
+  <footer>
+    <!-- links to different websites of mine-->
+    <!--&#9533 should add braces to divide between them.-->
+            
+                <nav>
+                    <a href="https://webpages.uncc.edu/mpiercy6/itis3135/Index.html" target="_blank">Charlotte.edu</a> &#9553;
+                    <a href="https://github.com/1MichaelPiercy" target="_blank">Github</a> &#9553;
+                    <a href="https://1michaelpiercy.github.io/itis3135/introduction.html" target="_blank">Github.io</a> &#9553;
+                    <a href="https://1MichaelPiercy.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9553;
+                    <a href="https://www.freecodecamp.org/1MichaelPiercy" target="_blank">freeCodeCamp</a> 
+              </nav>
+      <br />
+    
+      <p>Page built by Piercy inc</p>
+    
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmpiercy6%2Fitis3135%2FPiercy_Activity_Accessibility.html%3Fname%3D%26phone%3D%26submit%3DSubmit">
+        <img src="images/button-valid-html5.gif" width="100" height="35" alt="Link to HTML validator"></a>
+  
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmpiercy6%2Fitis3135%2FPiercy_Activity_Accessibility.html%3Fname%3D%26phone%3D%26submit%3DSubmit&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+        <img src="images/button-valid-css.gif" width="100" height="35" alt="Link to CSS validator"></a>
+    
+    </footer>
+  
+  </body>
+  
+  </html>

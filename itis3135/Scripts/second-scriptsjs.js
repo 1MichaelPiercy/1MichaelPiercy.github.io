@@ -3,15 +3,19 @@
 
 let companyName = "Machinelike Python";
 
-
+window.onload = function()
+{
+    validateEntry();
+}
  
     var mynumber = 0;
 
     function oneNumber() 
     {
-       return mynumber = parseInt(prompt("Hello, this is the " + companyName +  " and we are hoping you are doing well." + 
+        mynumber = parseFloat(prompt("Hello, this is the " + companyName +  " and we are hoping you are doing well." + 
        "\nThe Machinelike Python would like to know how many sides your shape has:"));
-
+       var newNumber = mynumber;
+return mynumber = Math.abs(Math.round(newNumber));
     }
 
    
@@ -54,9 +58,13 @@ function getShape() {
     {
         alert("enneagon");
     }
-    else 
+    else if (mynumber == 10)
     {
         alert("decagon");
+    }
+    else 
+    {
+        validateEntry();
     }
 }
 
@@ -65,10 +73,13 @@ function validateEntry()
 
 oneNumber();
 
-  while ((mynumber < 11) != (mynumber > 0))
+  while ((mynumber > 10) != (mynumber <= 0))
  {
-    mynumber = parseInt(prompt("Error, re-enter a value from 1 - 10.\n" + "Hello, this is the " + companyName +  " and we are hoping you are doing well." + 
+    mynumber = parseFloat(prompt("Error, re-enter a value from 1 - 10.\n" + "Hello, this is the " + companyName +  " and we are hoping you are doing well." + 
     "\nThe Machinelike Python would like to know how many sides your shape has:"));
+
+    var newNumber = mynumber;
+     mynumber = Math.abs(Math.round(newNumber));
  }
  
  getShape();

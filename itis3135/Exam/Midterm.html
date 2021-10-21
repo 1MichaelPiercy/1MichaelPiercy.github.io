@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weekly Calorie Calculator</title>
+    <link rel="stylesheet" href="Midterm.css">
+    <script src="Midterm.js"></script>
+</head>
+
+<body>
+<main>
+    <h1>Weekly Calorie Calculator</h1>
+    <h3>Enter Your Details</h3>
+    <!--add the form-->
+    <form id="your_details" name="your_details" action="#" >
+        <!--ID should probably be used. similar to when exchanging info from html to js file.-->
+<label id = "name">Name</label>
+<input type = "text" placeholder = "Enter your Name" id = "personsname" required>
+
+<label id = "email">Email</label>
+<input type = "text" placeholder = "Enter your email" id = "email1" required>
+
+<p>
+    <input type="submit" name="submit" value="Submit" >
+ </p>
+
+    </form>
+<form class = "radio" id="weekdays">
+    <!--add the radio buttons-->
+    <p>Monday</p>
+        <label for="Monday"><input  id = "Monday" type="radio" value = "Monday" > </label>
+        
+        <p>Tuesday</p>
+        <label for="Tuesday"><input id="Tuesday" type="radio" value = "Tuesday"> </label>
+
+        <p>Wednesday</p>
+        <label for="Wednesday"><input id = "Wednesday" type="radio" value = "Wednesday"> </label>
+
+        <p>Thursday</p>
+        <label for="Thursday"><input  id = "Thursday" type="radio" value = "Thursday"> </label>
+
+        <p>Friday</p>
+        <label for="Friday"><input id="Friday" type="radio" value = "Friday"> </label>
+
+        <p>Saturday</p>
+        <label for="Saturday"><input id="Saturday" type="radio" value = "Saturday"> </label>
+        
+        <p>Sunday</p>
+        <label for="Sunday"><input id="Sunday" type="radio" value="Sunday"> </label>
+
+    
+
+    <!--input for calorie-->
+    <label id = "calorie_intake">Enter the Calorie</label>
+    <input type = "text"  id = "calorie" >
+
+    <!--button for updating calorie-->
+    <input type = "button" id = "intakeCalorie" value = "Update" onclick = "updateCalorie()">
+</form>
+    <!--button for add calorie-->
+<form>
+    <input type = "button" id = "Average" value = "Average" onclick = "showAverageCalories()">
+</form>
+    <!--text box for showing Average calorie-->
+<p id = "showaverage">
+
+</p>
+
+    <!--header for showing maximum calorie amount and cheat day-->
+    <br>
+    <strong id="show_max">Show Maximum Calorie  and Cheat Day:</strong>
+    <!--div for showing maximum calorie amount and cheat day-->
+    <div id="showMax"></div>
+
+</main>
+<footer>
+    <br/>
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fmpiercy6%2Fitis3135%2FExam%2FMidterm.html">Validate HTML</a>
+    <br/>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fmpiercy6%2Fitis3135%2FExam%2FMidterm.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Validate CSS</a>
+</footer>
+</body>
+</html>
