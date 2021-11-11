@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link href="RentalVanscss.css" rel="Stylesheet" type="text/css" >
+	<title>Michael Piercy, ITSC3135-051, Semester long Project</title>
+</head>
+<!-- background should be red-->
+<body  >
+	<header >
+			<h1>Rental Vans</h1>
+	</header>
+
+    <h2>Reviews</h2>
+
+	<!--div for images and links-->
+	<div class = "homemenu">
+		<a href="rentalVans.html">Home</a>
+		<a href="rentals.html">Rentals</a>
+		<a href="pricing.html">Pricing </a>
+		<a href="history.html">History</a>
+		<a href="forums.html">Reviews</a>
+
+	</div>
+<div class = "homeimage">
+	<figure >
+		<a href="images/Missie.jpg" title="Missie the Dog" id = "Missie">
+			<img src="vanimages/pexels-alexey-chudin-8526618.jpg" width="400" height="400" alt="Van Rental Picture">
+		</a>
+		<figcaption>Reviews</figcaption>
+	 </figure>
+</div>
+
+	<div class = "p">
+		<p id = "reviewName">
+Pam
+		</p>
+		<p id = "stars">
+			Stars: 5
+		</p>
+		<p id = "reason">
+			The reason for them getting their 5 stars is because of how great of a job they did at getting me my van that I rented. It even came with all the bells and whistles on it.
+		</p>
+	</div>
+
+	<div id = "button">
+		<form id = "backandnext" action="#">
+		<button type="button" id = "back">Back</button>
+		<button type="button" id = "next">Next</button>
+		</form>
+	</div>
+	<div id = "text">
+		<form action="#" id = "reviews">
+		<input type="text" id="Name" value = "name"><br>
+		<input type="text" id="stars" value = "3"><br>
+		<input type="text" id="reason" value = "review"><br>
+		<button type="button" id = "addReview" onclick = "addreview()">Add Review</button>
+		
+
+		</form>
+		
+	</div>
+   
+
+</body>
+
+</html>

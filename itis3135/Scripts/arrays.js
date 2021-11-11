@@ -51,6 +51,7 @@ if (word.match(checkword) ==  null)
 
 
 
+
 if (isNaN(number) == true)
 {
      alert("Reenter salary!");

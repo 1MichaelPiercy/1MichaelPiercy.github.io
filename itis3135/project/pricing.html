@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+	<meta charset="UTF-8">
+	<link href="RentalVanscss.css" rel="Stylesheet" type="text/css" >
+	<title>Michael Piercy, ITSC3135-051, Semester long Project</title>
+</head>
+<!-- background should be red-->
+<body  class = "pricingclass">
+	<header >
+			<h1>Rental Vans</h1>
+	</header>
+
+    <h2>Payment</h2>
+
+	<!--div for images and links-->
+	<div class = "pricemenu">
+		<a href="rentalVans.html">Home</a>
+		<a href="rentals.html">Rentals</a>
+		<a href="pricing.html">Pricing </a>
+		<a href="history.html">History</a>
+		<a href="forums.html">Reviews</a>
+
+	</div>
+<div class = "homeimage">
+	<figure >
+		<a href="images/Missie.jpg" title="Pricing and Availability" id = "Pricing_Availability">
+			<img src="vanimages/pexels-alexey-chudin-8526618.jpg" width="250" height="250" alt="Pricing">
+		</a>
+		<figcaption>Pricing and Pickup</figcaption>
+	 </figure>
+</div>
+
+	<div class = "payment" id = "border">
+		<p>
+			Pay Here:
+		</p>
+		<form>
+			<p>Please enter name:</p>
+  
+			<input type="text" id="name" ><br>
+
+			<p>
+				Please enter day of pickup:
+			</p>
+		
+
+		
+  
+			<input type="text" id="pickup" ><br>
+				<p>
+				Please enter email:
+			</p>
+  
+			<input type="text" id="email" ><br>
+
+			<p>Please enter card information: </p>
+  
+			<input type="text" id="cardnumber" ><br>
+
+			<p>Please enter phone number: </p>
+  
+			<input type="text" id="telephonenumber" ><br><br>
+			
+
+			<label>Select the van you want:</label><br><br>
+			<div class = "align">
+			<input type="radio" id="delivery"  value="125" ><label>Delivery Van</label><br>
+			<input type="radio" id="utility"  value="150" ><label>Utility Van</label><br>
+			<input type="radio" id="passenger"  value="150" ><label>Passenger Van</label><br>
+			<input type="radio" id="camper"  value="300" ><label>Camper Van</label><br>
+			</div>
+  
+ 
+			<br><input type="submit" value="Submit" onclick="">
+		</form>
+	</div>
+   
+
+</body>
+<div class = "interactpictures">
+	<h4 id = "van">Van Styles</h4>
+    <ul id="image_list" class = "slideshowli">
+        <li id = "first" class = "active"><a href="vanimages/pexels-kindel-media-6868160.jpg" title="This is one of many delivery trucks that we offer. These vans have 300hp and a inline 6 cylinder engine. They all come in different sizes, but the same price of $125 a week."  id = "Happy">Delivery van</a></li>
+
+        <li ><a href="vanimages/mercedes_milieuvoertuig_van_de.jpg" title="This is one of our many utility vans. This van is meant for contractors to work out of. It contains shelving and storage lockers so items don't get thrown around. These vans contain a 6 cylinder engine with 290hp. The price is $150 a week." id = "UtilityVan">Utility Van</a></li>
+        <li><a href="vanimages/passengerside.jpg" title="Need to get the family around in one single vehilce. We have a wide selection of Passenger Vans here at Van Rental. The engines in these vans are 4 cylinders and offer 220hp. Enough to get you to your destination and not eat the gas up. The price to rent one of these babies is $150."  id = "Passenger">Passenger Van</a></li>
+        
+        <li id = "last"><a href="vanimages/camper_van_camping_france.jpg" title="Heres one of our camper vans. They all come with the same items inside. They have 1 bed, 1 bathroom, 1 sink, and booth. The engine is a 8 cylnider that makes 350 hp. This cost $300 for one weekend to rent."  id = "Camper">Camper Van</a></li>
+    </ul>
+    </div>
+</html>

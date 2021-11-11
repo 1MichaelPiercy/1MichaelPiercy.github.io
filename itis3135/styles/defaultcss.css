@@ -13,6 +13,10 @@ th, tr, td {
     font-weight: bold;
     text-align: left;
 }
+nav{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
 
 footer
 {
@@ -148,4 +152,33 @@ tbody tr:nth-child(even) td
 {
 	background-color: lightgoldenrodyellow;
 
+}
+
+.slidshowimg{
+	width: 400px;
+	height: 400px;
+}
+.slideshowli{
+	
+	
+	margin-right: -650px;
+	margin-left: -700px;
+}
+
+#slideshowleftbutton{
+	background-color: rgb(61, 5, 5);
+	color: wheat;
+	
+	width: 100px;
+	height: 30px;
+	
+}
+
+#slideshowrightbutton{
+	background-color: rgb(61, 5, 5);
+	color: wheat;
+	/*padding: 5px 5px 5px 5px;*/
+	width: 100px;
+	height: 30px;
+	
 }

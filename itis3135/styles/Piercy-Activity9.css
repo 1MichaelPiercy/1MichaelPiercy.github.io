@@ -18,6 +18,11 @@ h1 {
 	color: blue;
 }
 
+img{
+	width: 400px;
+	height: 400px;
+}
+
 h2 {
 	font-size: 120%;
 	padding: .5em 0;
@@ -30,19 +35,8 @@ li {
 	text-align: center;
 }
 
-#image_list img{
-	display: none;
-}
-#image_list img.active{
+
+#image_list li.active{
 	display: inline-block;
 }
 
-.back
-{
-	z-index: 100;
-}
-
-.next
-{
-	z-index: 100;
-}
