@@ -4,6 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="RentalVanscss.css" rel="Stylesheet" type="text/css" >
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/rentalvans.js"></script>
+	
 	<title>Michael Piercy, ITSC3135-051, Semester long Project</title>
 </head>
 <!-- background should be red-->
@@ -32,14 +35,14 @@
 	 </figure>
 </div>
 
-	<div class = "payment" id = "border">
+	<div class = "payment" id = "border"  >
 		<p>
 			Pay Here:
 		</p>
-		<form>
+		<form id = "formpayment" action = "#">
 			<p>Please enter name:</p>
   
-			<input type="text" id="name" ><br>
+			<input type="text" id="name" required placeholder="Michael"><br>
 
 			<p>
 				Please enter day of pickup:
@@ -48,32 +51,32 @@
 
 		
   
-			<input type="text" id="pickup" ><br>
+			<input type="text" id="pickup" placeholder = "monday"><br>
 				<p>
 				Please enter email:
 			</p>
   
-			<input type="text" id="email" ><br>
+			<input type="email" id="email" name = "email" placeholder = "reb@gmail.com"><br>
 
 			<p>Please enter card information: </p>
   
-			<input type="text" id="cardnumber" ><br>
+			<input type="text" id="cardnumber" placeholder = "123456789"><br>
 
 			<p>Please enter phone number: </p>
   
-			<input type="text" id="telephonenumber" ><br><br>
+			<input type="tel" id="telephonenumber" required pattern = "\d{3}[\-]\d[3][\-]\d{4}" placeholder = "1234567890"><br><br>
 			
 
 			<label>Select the van you want:</label><br><br>
-			<div class = "align">
-			<input type="radio" id="delivery"  value="125" ><label>Delivery Van</label><br>
-			<input type="radio" id="utility"  value="150" ><label>Utility Van</label><br>
-			<input type="radio" id="passenger"  value="150" ><label>Passenger Van</label><br>
-			<input type="radio" id="camper"  value="300" ><label>Camper Van</label><br>
-			</div>
+			<form class = "align" name = "">
+			<input type="radio" id="delivery" name = "vehicle" value="125" ><label>Delivery Van</label><br>
+			<input type="radio" id="utility"  name = "vehicle" value="150" ><label>Utility Van</label><br>
+			<input type="radio" id="passenger" name = "vehicle" value="150" ><label>Passenger Van</label><br>
+			<input type="radio" id="camper" name = "vehicle" value="300" ><label>Camper Van</label><br>
+			</form>
   
  
-			<br><input type="submit" value="Submit" onclick="">
+			<br><input type="submit" value="Submit" id = "submit" name = "submit">
 		</form>
 	</div>
    

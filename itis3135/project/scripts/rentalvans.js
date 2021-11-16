@@ -70,10 +70,97 @@ evt.preventDefault();
 
  // move the focus to the first link
 
-}); // end ready
-//https://code.jquery.com/jquery-3.1.1.min.js
+ 
+//C:\Users\pierc\Desktop\itis3135\project\scripts\jquery-3.6.0.min.js
+//project\scripts\jquery-3.6.0.min.js
 
-window.onload = function () {
+
+
+ 
+     
+        
+$("#submit").click(function (event){
+
+    $("#formpayment").submit(function(){
+    var valid = true;
+var emailPat = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+var email = $("#email").val();
+if (email == "")
+{
+    $("#email").next().text("required");
+    valid = false;
+}
+
+else if ( !emailPat.test(email)){
+    $("#email").next().text("required");
+    valid = false;
+}
+if (valid == false)
+{
+    event.preventDefault();
+}
+
+let isname = /^[A-Za-z]+$/;
+var name = $("#name").val().trim();
+
+if (name == ""){
+    $("#name").next().text("");
+    valid = false;
+    alert("name required")
+}
+else if (!isname.test(name)){
+    $("#email").text("");
+    valid = false;
+    alert("name required")
+}
+
+if (valid == false)
+{
+    event.preventDefault();
+}
+
+var dayoweek = $("#pickup").val();
+dayoweek = $('jqueryselector').val($(dayofweek).val().toUpperCase());
+
+if (dayoweek == "MONDAY")
+{
+    valid = true;
+}
+else if (dayoweek == "TUESDAY"){
+    valid = true;
+}
+else if (dayoweek == "WENDSDAY"){
+    valid = true;
+}
+else if(dayoweek == "THURSDAY"){
+    valid = true;
+}
+else if (dayoweek == "FRIDAY"){
+    valid = true;
+}
+else if (dayoweek == "SATURDAY") {
+    valid = true;
+}
+else if (dayoweek == "SUNDAY"){
+valid = true;
+}
+else{
+    $("#pickup").next().text("required");
+    valid = false;
+}
+
+if (valid == false)
+{
+    event.preventDefault();
+}
+
+});
+});
+        
+
+ });
+
+ window.onload = function () {
     document.getElementById("dropmenu").onclick = addreview;
 
 }
