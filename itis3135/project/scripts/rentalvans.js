@@ -2,11 +2,40 @@
 
 $(document).ready(function() {
 
-    
-    
+    $("#slider").bxSlider({
+        auto: true,
+        minSlides: 1,
+        maxSlides: 1,
+        slideWidth: 500,
+        slideMargin: 20,
+        randomStart: true,
+        transition: 10000,
+        captions: true,
+        pager: true,
+        pagerSelector: "empty",
+        pagerType: "full", 
+        pagerType: "short",
+        
+    });
+//json
+  
+$.getJSON("rvans.json", function(data){
 
-    // get the image URL and caption for each image
+    $.each(data, function(){
 
+      $.each(this, function(key, value){
+
+        $("#reviewparagraph").append(
+            "Name: " + value.name + "<br>" +
+            "Rating: " + value.stars + "<br>" +
+            "Review: " + value.review + "<br><br>"
+        )
+
+      });
+
+    });
+
+});
 
 
 
@@ -67,165 +96,56 @@ imageswap.src = $(this).attr("href");
          // cancel the default action of each link
 evt.preventDefault();
 });
-
- // move the focus to the first link
-
- 
-//C:\Users\pierc\Desktop\itis3135\project\scripts\jquery-3.6.0.min.js
-//project\scripts\jquery-3.6.0.min.js
-
-
-
+var emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+$("#formpayment").submit(
+    function(event) {
+        var isValid = true;
+        
+        // validate the name entry
+        var name = $("#name").val().trim();
+        if (name == "") {
+            $("#name").next().text("This field is required.");
+            isValid = false;
+        } 
+        else {
+            $("#name").val(name);
+            $("#name").next().text("");
+        }
+        $("#name").val(name);
+                    
+        // validate the email entry with a regular expression
+        var email = $("#email").val().trim();
+        if (email == "") { 
+            $("#email").next().text("This field is required.");
+            isValid = false;
+        } else if ( !emailPattern.test(email) ) {
+            $("#email").next().text("Must be a valid email address.");
+            isValid = false;
+        } else {
+            $("#email").next().text("");
+        }
+        $("#email").val(email); 
+        
+        // validate the phone number
+        var phone = $("#telephonenumber").val().trim();
+        if (phone == "") { 
+            $("#telephonenumber").next().text("This field is required.");
+            isValid = false; 
+        } else {
+            $("#telephonenumber").next().text("");
+        }
+        $("#telephonenumber").val(phone);
+        
+        // prevent the submission of the form if any entries are invalid 
+        if (isValid == false) {
+            event.preventDefault();				
+        }
+    } // end function
+);	// end submit
  
      
         
-$("#submit").click(function (event){
 
-    $("#formpayment").submit(function(){
-    var valid = true;
-var emailPat = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-var email = $("#email").val();
-if (email == "")
-{
-    $("#email").next().text("required");
-    valid = false;
-}
-
-else if ( !emailPat.test(email)){
-    $("#email").next().text("required");
-    valid = false;
-}
-if (valid == false)
-{
-    event.preventDefault();
-}
-
-let isname = /^[A-Za-z]+$/;
-var name = $("#name").val().trim();
-
-if (name == ""){
-    $("#name").next().text("");
-    valid = false;
-    alert("name required")
-}
-else if (!isname.test(name)){
-    $("#email").text("");
-    valid = false;
-    alert("name required")
-}
-
-if (valid == false)
-{
-    event.preventDefault();
-}
-
-var dayoweek = $("#pickup").val();
-dayoweek = $('jqueryselector').val($(dayofweek).val().toUpperCase());
-
-if (dayoweek == "MONDAY")
-{
-    valid = true;
-}
-else if (dayoweek == "TUESDAY"){
-    valid = true;
-}
-else if (dayoweek == "WENDSDAY"){
-    valid = true;
-}
-else if(dayoweek == "THURSDAY"){
-    valid = true;
-}
-else if (dayoweek == "FRIDAY"){
-    valid = true;
-}
-else if (dayoweek == "SATURDAY") {
-    valid = true;
-}
-else if (dayoweek == "SUNDAY"){
-valid = true;
-}
-else{
-    $("#pickup").next().text("required");
-    valid = false;
-}
-
-if (valid == false)
-{
-    event.preventDefault();
-}
-
-});
-});
         
 
  });
-
- window.onload = function () {
-    document.getElementById("dropmenu").onclick = addreview;
-
-}
-
-
-const person = [];
-const reason = [];
-const stars = [];
-
-function addreview()
-{
- 
-
-
- 
- let checkword = /^[A-Za-z]+$/;
-
-
-var word = null;
-var reasonword = null;
-var number = 0;
-
-
-word = document.getElementById("Name").value;
-
-reasonword = document.getElementById("reason").value;
-
-number = document.getElementById("stars").value;
-
-if (word.match(checkword) ==  null)
-{
-
-    alert("Renenter name!");
-
-}
-
-
-if (reasonword.match(checkword) ==  null)
-{
-
-    alert("Renenter review!");
-
-}
-
-
-if (isNaN(number) == true)
-{
-     alert("Reenter salary!");
-    
-}
-
-
-
-if ((isNaN(number) != true) == (word.match(checkword) !=  null))
-{
-    if(reasonword.match(checkword) != null){
-    stars.push(number);
-    person.push(word);
-    reason.push(reasonword);
-    }
-
-}
-
-
-
-
-
- }

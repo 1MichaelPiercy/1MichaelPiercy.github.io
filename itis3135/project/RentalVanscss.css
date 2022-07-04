@@ -3,7 +3,14 @@ body{
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: blanchedalmond;
+    
+
 }
+#text{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
 
 a:link { 
     text-decoration: none; 
@@ -18,15 +25,20 @@ footer{
     border: solid;
     color: blanchedalmond;
     font-size: 15px;
-    margin-left: 615px;
-    margin-right: 615px;
+    margin-left: 40%;
+    margin-right: 40%;
     margin-top: 15px;
     margin-bottom: 10px;
-    color: rgb(rgba(255, 10, 10, 0.151), rgb(0, 0, 0), rgba(129, 129, 247, 0.342));
+   
 
     
     position: relative;
 
+}
+
+#reviewparagraph{
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .slideshowli{
@@ -43,40 +55,64 @@ a{
 .homemenu{
     border: solid;
     color: blanchedalmond;
-    margin-left: 615px;
-    margin-right: 615px;
+    margin-left: 36%;
+    margin-right: 38%;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: rgb(rgba(255, 10, 10, 0.151), rgb(0, 0, 0), rgba(129, 129, 247, 0.342));
+    
+}
+
+.homeimage{
+    margin-left: 41.5%;
+    margin-right: 41.5%;
+    
 }
 
 
 
-h1, h2{
-    text-align: center;
+h1{
+    margin-left: 38%;
+    margin-right: 35%;
+}
+h2{
+    
+    margin-left: 46.5%;
+    margin-right: 44.5%;
+}
+h4{
+    margin-left: 46%;
+    margin-right: 46%;
 }
 .p{
-    text-align: center;
-    margin-left: 615px;
-    margin-right: 615px;
+    
+    margin-left: 40%;
+    margin-right:40%;
+    
 }
-div{
-    text-align: center;
+figcaption{
+    margin-left: 47%;
+
 }
+.image{
+    margin-left: 33.5%;
+    margin-right:36.5%;
+}
+
 
 #caption{
     padding-top: 5px;
-    margin-left:500px;
-    margin-right: 500px;
+    margin-left: 35%;
+    margin-right:35%;
+    
 }
 .payment{
     text-align: center;
     border: solid;
     width: 300px;
-    position: relative;
-
-    left:700px;
+    margin-left: 40%;
+    margin-right: 40%;
 }
+
 .align{
     text-align: left;
     position: relative;
@@ -92,6 +128,27 @@ margin-bottom: 5px;
     left: -5px;
 }
 
+.bx-wrapper {
+	margin-bottom: 20px;
+}
+.body {
+	
+	width: 540px;
+	margin: 0 auto;
+    
+    padding: 20px;
+   left: 20px;
+   position: relative;
+}
+
+#slider{
+    
+    position: relative;
+}
+#id_pager{
+    text-align: center;
+    position: relative;
+}
 
 .interactpictures{
    text-align: center;

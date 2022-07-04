@@ -2,66 +2,84 @@
 <html lang="en">
     
 <head>
-	<meta charset="UTF-8">
-	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	
+	<meta name = "viewport" content = "width=device-width, initial-scale= 1">
 	<link href="RentalVanscss.css" rel="Stylesheet" type="text/css" >
+	<script src="scripts/jquery-3.6.0.min.js"></script>
+    
+	
+
+	<script src="scripts/rentalvans.js"></script>
+	
 	<title>Michael Piercy, ITSC3135-051, Semester long Project</title>
+	<!--https://www.tutorialspoint.com/jqueryui/jqueryui_datepicker.htm-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<!--bxslider-->
+	  <link rel="stylesheet" href="/resources/demos/style.css">
+	  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+
+
 </head>
 <!-- background should be red-->
 <body  >
 	<header >
-			<h1>Rental Vans</h1>
+			<h1>The Rental Van Company</h1>
 	</header>
 
     <h2>Reviews</h2>
 
 	<!--div for images and links-->
 	<div class = "homemenu">
-		<a href="rentalVans.html">Home</a>
+		<a href="rentalvans.html">Home</a>
 		<a href="rentals.html">Rentals</a>
 		<a href="pricing.html">Pricing </a>
 		<a href="history.html">History</a>
 		<a href="forums.html">Reviews</a>
 
 	</div>
-<div class = "homeimage">
-	<figure >
-		<a href="images/Missie.jpg" title="Missie the Dog" id = "Missie">
-			<img src="vanimages/pexels-alexey-chudin-8526618.jpg" width="400" height="400" alt="Van Rental Picture">
-		</a>
-		<figcaption>Reviews</figcaption>
-	 </figure>
-</div>
+	<h4 id = "vanlife">Van Styles</h4>
+	<div class = "body">
+		
+		<ul id="slider" >
+
+			<li ><img src="vanimages/pexels-kindel-media-6868160.jpg" alt = ""  ></li>
+	
+			<li ><img src="vanimages/mercedes_milieuvoertuig_van_de.jpg" alt=""  ></li>
+			<li><img src="vanimages/passengerside.jpg" alt = ""  ></li>
+			
+			<li><img src="vanimages/camper_van_camping_france.jpg" alt = ""   ></li>
+		</ul>
+		
+		</div>
 <main>
-	<div class = "p">
-		<p id = "reviewName">
-Pam
-		</p>
-		<p id = "stars">
-			Stars: 5
-		</p>
-		<p id = "reason">
-			The reason for them getting their 5 stars is because of how great of a job they did at getting me my van that I rented. It even came with all the bells and whistles on it.
-		</p>
+	<div id = "reviewparagraph">
+
+
+
+		
 	</div>
 
-	<div id = "button">
-		<form id = "backandnext" action="#">
-		<button type="button" id = "back">Back</button>
-		<button type="button" id = "next">Next</button>
-		</form>
-	</div>
+	
 	<div id = "text">
+		<p>Add your review here.</p>
 		<form action="#" id = "reviews">
+			
 		<input type="text" id="Name" value = "name"><br>
-		<input type="text" id="stars" value = "3"><br>
-		<input type="text" id="reason" value = "review"><br>
+		<input type="text" id="starsgiven" value = "3"><br>
+		<input type="text" id="reasongiven" value = "review"><br>
 		<button type="button" id = "addReview" onclick = "addreview()">Add Review</button>
 		
 
 		</form>
 		
 	</div>
+	 
    </main>
 	<footer>
 

@@ -1,0 +1,17 @@
+{"reviewers":[
+	{
+		"name": "John",
+        "stars": "5",
+        "review": "The van we rented was great. It was nice to have a good van to travel around in. I can't wait to rent a van from Rental Vans again."
+    },
+    {
+		"name": "Sam",
+        "stars": "4",
+        "review": "Rental Vans did an awsome job of giving me my Van in a timely manner. They even cleaned it and had it topped off before we even got there."
+    },
+    {
+		"name": "Hope",
+        "stars": "3.5",
+        "review": "All though I wasn't able to get the right size van from Rental Vans, I was still able to get one that got the job done. In my case it was a passenger van. Although they did give me one with more bells and whitsles."
+    }
+]}
