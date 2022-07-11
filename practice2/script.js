@@ -2,5 +2,9 @@
 //jquery/jquery-3.6.0.min.js
 
 $(document).ready(function() {
-    document.write("Hello, World! We are using jQuery from local machine");
+    const links = document.querySelectorAll("a");
+    for (let link of links){
+        const image = new Image();
+        image.src = link.href;
+    }
  });
