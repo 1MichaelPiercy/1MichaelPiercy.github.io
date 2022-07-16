@@ -16,7 +16,7 @@ $(document).ready(function() {
     const mainImage = $("#mainimage");
 
     const imageLinks = $("#imagelist").querySelectorAll("a");
-    for (let link of links){
+    
         const image = new Image();
         image.src = link.href;
 
@@ -27,6 +27,6 @@ $(document).ready(function() {
             evt.preventDefault();
         });
 
-    }
+   
     imageLinks[0].focus();
  })
