@@ -33,7 +33,7 @@ $("#image_list a").click(function(evt){
                 var receivecaption = $(this).attr("title");
     
                 //this will swap the captions
-                $("#Caption").text(receivecaption);
+                $("#caption").text(receivecaption);
     
     
     

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang = "en" dir="ltr">
-</div>
-    <head>
-    <link href="style.css" rel="stylesheet" type="text/css">
+<html lang = "en" >
 
+    <head class="head">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial=scale=1.0">
     <meta name="viewport" content="height=device-height, initial=scale=1.0">
-    
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
     <script src="scripts\script2.js"></script>
     <script src="scripts/jquery-3.6.0.min.js"></script>
    
@@ -17,18 +20,17 @@
              <a href="About.html">About</a>
         <a href="Album.html">Album</a>
      </nav>
-    <main id="main">
-    <div class = "backgroundcolor">
-    <h1>Construction Projects</h1>
-    <p>Click image to get more info and enlarge.</p>
+    <main class = "backgroundcolor">
+    <div class = "1">
     <ul id="image_list">
-        <li  class ="active" ><a href="20151027_144457 - Copy.jpg" title="Shelving"
-            id="1"><img src = "20151027_144457 - Copy.jpg"></a></li>
-        <li><a href="20160507_141731 - Copy.jpg" title="Deck"  id="2"><img src = "20160507_141731 - Copy.jpg"></a></li>
-        <li ><a href="20160614_153812 - Copy.jpg" title="Tree House" id="3"><img src = "20160614_153812 - Copy.jpg"></a></li>
+        <li id="first" class ="active" ><a href="20151027_144457 - Copy.jpg" title="Shelving"
+            id="shelves">Shelving</a></li>
+        <li><a href="20160507_141731 - Copy.jpg" title="Deck"  id="deck">Deck</a></li>
+        <li id="last"><a href="20160614_153812 - Copy.jpg" title="Tree House" id="tree_house">Tree House</a></li>
     </ul>
-    <h2 id="Caption">Hello</h2>
-    <p><img src = "20151027_144457 - Copy.jpg" id="image" class = "img"> </p>
-</div>
+    </div>
+    <h2 id="caption">Hello</h2>
+    <p id="gallery"><img src = "20151027_144457 - Copy.jpg" id="image" class = "slideshowimg"> </p>
+
 </main>
 </html>
