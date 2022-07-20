@@ -1,5 +1,6 @@
-//https://code.jquery.com/jquery-1.9.1.min.js
-//jquery/jquery-3.6.0.min.js
+
+//scripts/jquery-3.6.0.min.js
+
 
 $(document).ready(function() {
     const links = document.querySelectorAll("a");
@@ -9,7 +10,7 @@ $(document).ready(function() {
     }
  });
 
- const $ = selector => document.querySelector(selector);
+ 
  
  document.addEventListener("DOMContentLoaded", () => {
     const caption = $("#Caption");

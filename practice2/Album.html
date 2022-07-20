@@ -6,28 +6,29 @@
 
     <meta name="viewport" content="width=device-width, initial=scale=1.0">
     <meta name="viewport" content="height=device-height, initial=scale=1.0">
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="script.js"></script>
-    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
+    
+    <script src="scripts\script2.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
    
     </head>
-    <nav>
+    <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
              <a href="About.html">About</a>
         <a href="Album.html">Album</a>
      </nav>
-    
+    <main id="main">
     <div class = "backgroundcolor">
     <h1>Construction Projects</h1>
     <p>Click image to get more info and enlarge.</p>
-    <ul id="imagelist">
-        <li><a href="20151027_144457 - Copy.jpg" title="Shelving"><img src = "20151027_144457 - Copy.jpg"></a></li>
-        <li><a href="20160507_141731 - Copy.jpg" title="Deck"><img src = "20160507_141731 - Copy.jpg"></a></li>
-        <li><a href="20160614_153812 - Copy.jpg" title="Tree House"><img src = "20160614_153812 - Copy.jpg"></a></li>
+    <ul id="image_list">
+        <li  class ="active" ><a href="20151027_144457 - Copy.jpg" title="Shelving"
+            id="1"><img src = "20151027_144457 - Copy.jpg"></a></li>
+        <li><a href="20160507_141731 - Copy.jpg" title="Deck"  id="2"><img src = "20160507_141731 - Copy.jpg"></a></li>
+        <li ><a href="20160614_153812 - Copy.jpg" title="Tree House" id="3"><img src = "20160614_153812 - Copy.jpg"></a></li>
     </ul>
-    <h2 id="Caption"></h2>
-    <p><img src = "20151027_144457.jpg" id="mainimage"> </p>
+    <h2 id="Caption">Hello</h2>
+    <p><img src = "20151027_144457 - Copy.jpg" id="image" class = "img"> </p>
 </div>
-
+</main>
 </html>
