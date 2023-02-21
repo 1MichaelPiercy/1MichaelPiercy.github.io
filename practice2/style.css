@@ -26,6 +26,11 @@ head{
 
 }
 
-#caption{
-    position: center;
+main #caption{
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
 }
